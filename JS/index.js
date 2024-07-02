@@ -13,8 +13,8 @@ $(".close").on("click", function () {
 });
 
 // Scroll to section
-$(".nav-item").on("click", function (e) {
-  let sectionId = $(e.target).attr("href");
+$(".nav-item").on("click", function () {
+  let sectionId = $(this).attr("href");
   let sectionOffset = $(sectionId).offset().top;
   $("html,body").animate({ scrollTop: sectionOffset }, 500);
 });
